@@ -22,6 +22,13 @@
  * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
+ *
+ * -----------------------------------------------------------------------------
+ *
+ * Rating description are based on Rating System wiki on Fandom.
+ *
+ * See license here: https://www.fandom.com/licensing
+ * All of comments under AgeRatingType and related constants are licensed under CC-BY-SA.
  */
 
 package comic_info
@@ -95,20 +102,20 @@ type AgeRatingType string
 
 const (
 	AgeRatingUnknown          AgeRatingType = "Unknown"
-	AgeRatingAdultsOnly18Plus AgeRatingType = "Adults Only 18+"
-	AgeRatingEarlyChildhood   AgeRatingType = "Early Childhood"
-	AgeRatingEveryone         AgeRatingType = "Everyone"
-	AgeRatingEveryone10Plus   AgeRatingType = "Everyone 10+"
-	AgeRatingG                AgeRatingType = "G"
-	AgeRatingKidsToAdults     AgeRatingType = "Kids to Adults"
-	AgeRatingM                AgeRatingType = "M"
-	AgeRatingMA15Plus         AgeRatingType = "MA15+"
-	AgeRatingMature17Plus     AgeRatingType = "Mature 17+"
-	AgeRatingPG               AgeRatingType = "PG"
-	AgeRatingR18Plus          AgeRatingType = "R18+"
-	AgeRatingRatingPending    AgeRatingType = "Rating Pending"
-	AgeRatingTeen             AgeRatingType = "Teen"
-	AgeRatingX18Plus          AgeRatingType = "X18+"
+	AgeRatingAdultsOnly18Plus AgeRatingType = "Adults Only 18+" // Maybe [Adults Only](https://rating-system.fandom.com/wiki/Adults_Only_(JAST_USA)) which tagged by specific publisher, [JAST USA](https://ja.wikipedia.org/wiki/JAST_USA).
+	AgeRatingEarlyChildhood   AgeRatingType = "Early Childhood" // Maybe [ESRB](https://en.wikipedia.org/wiki/Entertainment_Software_Rating_Board)'s [Early Childhood](https://rating-system.fandom.com/wiki/ESRB_Early_Childhood).
+	AgeRatingEveryone         AgeRatingType = "Everyone"        // Maybe [ESRB](https://en.wikipedia.org/wiki/Entertainment_Software_Rating_Board)'s [Everyone](https://rating-system.fandom.com/wiki/ESRB_Everyone).
+	AgeRatingEveryone10Plus   AgeRatingType = "Everyone 10+"    // Maybe [ESRB](https://en.wikipedia.org/wiki/Entertainment_Software_Rating_Board)'s [Everyone 10+](https://rating-system.fandom.com/wiki/ESRB_Everyone_10%2B).
+	AgeRatingG                AgeRatingType = "G"               // Declared in multiple rating system. See [G | Rating System Wiki | Fandom](https://rating-system.fandom.com/wiki/G).
+	AgeRatingKidsToAdults     AgeRatingType = "Kids to Adults"  // Maybe [ESRB](https://en.wikipedia.org/wiki/Entertainment_Software_Rating_Board)'s [Everyone](https://rating-system.fandom.com/wiki/ESRB_Everyone). This was originally called as "Kids To Adults".
+	AgeRatingM                AgeRatingType = "M"               // Declared in multiple rating system. See [M | Rating System Wiki | Fandom](https://rating-system.fandom.com/wiki/M).
+	AgeRatingMA15Plus         AgeRatingType = "MA15+"           // Maybe [Australian Classification Board](https://en.wikipedia.org/wiki/Australian_Classification_Board)'s [MA 15+](https://rating-system.fandom.com/wiki/MA_15%2B).
+	AgeRatingMature17Plus     AgeRatingType = "Mature 17+"      // Maybe [ESRB](https://en.wikipedia.org/wiki/Entertainment_Software_Rating_Board)'s [Mature 17+](https://rating-system.fandom.com/wiki/ESRB_Mature_17%2B).
+	AgeRatingPG               AgeRatingType = "PG"              // Declared in multiple rating system. See [PG | Rating System Wiki | Fandom](https://rating-system.fandom.com/wiki/PG).
+	AgeRatingR18Plus          AgeRatingType = "R18+"            // Declared in multiple rating system. Such as [Australian Classification Board](https://en.wikipedia.org/wiki/Australian_Classification_Board) or [Eirin](https://en.wikipedia.org/wiki/Eirin).
+	AgeRatingRatingPending    AgeRatingType = "Rating Pending"  // This may general "rating pending" or [ESRB](https://en.wikipedia.org/wiki/Entertainment_Software_Rating_Board)'s [Rating Pending](https://rating-system.fandom.com/wiki/ESRB_Rating_Pending).
+	AgeRatingTeen             AgeRatingType = "Teen"            // Maybe [ESRB](https://en.wikipedia.org/wiki/Entertainment_Software_Rating_Board)'s [Teen](https://rating-system.fandom.com/wiki/ESRB_Teen).
+	AgeRatingX18Plus          AgeRatingType = "X18+"            // Maybe [Australian Classification Board](https://en.wikipedia.org/wiki/Australian_Classification_Board)'s [X 18+](https://rating-system.fandom.com/wiki/X_18%2B). But there are another rating named [X18](https://rating-system.fandom.com/wiki/X18_(FPB)) declared by [Film and Publication Board](https://en.wikipedia.org/wiki/Film_and_Publication_Board)
 )
 
 type ArrayOfComicPageInfo struct {
